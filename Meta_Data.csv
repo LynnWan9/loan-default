@@ -1,0 +1,34 @@
+﻿Column #,Variable Name,Data Type,Description of variable
+1,MIS_Status,Text,"Loan Status: 
+Failure: defaulted (also called charged off) = CHGOFF
+Success:  loan paid  in full = PIF "
+2,LoanNr_ChkDgt,Text,Identifier – Primary Key
+3,Name,Text,Borrower Name
+4,City,Text,Borrower City
+5,State,Text,Borrower State
+6,Zip,Text,Borrower Zip Code
+7,Bank,Text,Bank Name
+8,BankState,Text,Bank State
+9,NAICS,Text,North American Industry Classification System code
+10,ApprovalDate,Date/Time,Date SBA Commitment Issued
+11,ApprovalFY,Text,Fiscal Year of Commitment
+12,Term,Number,Loan term in months
+13,NoEmp,Number,Number of Business Employees
+14,NewExist,Text,"1 = Existing Business, 2 = New Business"
+15,CreateJob,Number,Number of jobs created
+16,RetainedJob,Number,Number of jobs retained
+17,FranchiseCode,Text,"Franchise Code,  00000 or 00001 = No Franchise"
+18,UrbanRural,Factor,"1= Urban, 2= Rural, 0 = Undefined"
+19,RevLineCr,Factor,Revolving Line of Credit : Y = Yes
+20,LowDoc,Factor,"LowDoc Loan Program: Y = Yes, N = No"
+21,DisbursementDate,Date/Time,Disbursement Date
+22,DisbursementGross,Numeric,"Amount Disbursed, $"
+23,BalanceGross,Numeric,"Gross amount outstanding, $"
+24,GrAppv,Numeric,"Gross Amount of Loan Approved by Bank, $"
+25,SBA_Appv,Numeric,"SBA’s Guaranteed Amount of Approved Loan, $"
+26,New,Factor,"=1 if NewExist=2 (New Business), =0 if NewExist=1 (Existing Business)"
+27,RealEstate,Factor,"=1 if loan is backed by real estate, =0 otherwise"
+28,Portion,Numeric,Proportion of Gross Amount Guaranteed by SBA
+29,Recession,Factor,"=1 if loan is active during Great Recession, =0 otherwise"
+30,daysterm,Numeric,Extra variables generated when creating “Recession” in Section 4.1.6
+31,xx,Numeric,Extra variables generated when creating “Recession” in Section 4.1.6
